@@ -1,11 +1,7 @@
 #!/bin/bash
 
-  for f in $(find -name '*.tga'); do
-     echo "Convert ${f} to ${f%.tga}.png"
-     ./magick "${f}" -flip "${f%.tga}.png"
-     rename ".tga." ".png." "${f}.meta"
-  done
+find . -type f -name '*.tga' -exec magick "{}" -flip "{}.png" \; -exec echo {} \;
+find . -type f -name '*.tga' -exec rename ".tga." ".tga.png." "{}.meta" \;
 
 
-
-  echo "Tous les images de textures sont convertis!"
+echo "Tous les images de textures sont convertis!"
