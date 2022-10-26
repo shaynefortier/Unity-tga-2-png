@@ -8,7 +8,7 @@ _Pour l'instant, c'est possible seulement sur le système d'exploitation Linux. 
 
 ## Sur le système Linux
 
-1. Déplacez ou copiez le script `unity-tga2png.sh` vers le dossier _Assets_ de votre projet Unity.
+1. Déplacez ou copiez le script `unity-tga2png.sh` et le fichier `magick` sans extension vers le dossier _Assets_ de votre projet Unity.
 2. Exécutez le script par votre méthode préférée:
    - Si vous avez Nemo ou votre système est Linux Mint, vous avez juste à cliquer puis choisir exécuter
    - Sinon, utilisez le terminal. Faites un `cd` au dossier où ce trouve le script, puis tapez `./unity-tga2png.sh`.
