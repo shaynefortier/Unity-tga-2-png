@@ -16,6 +16,8 @@ Pour le moment, le script ne supprime pas les fichiers TGA afin de vous laisser 
 
 ## Sur Windows
 
+**Note:** Le script a l'air de ne pas fonctionner quand le projet n'est pas dans le disque `C:`. Le script est également capricieux en ce qui concerne les espaces dans les noms de dossier. Pour ce dernier, je ferai une mise à jour quand je vais avoir le temps. Je recommande de mettre votre projet temporairement sur le bureau pendant la conversion des images de textures.
+
 1. Déplacez ou copiez le fichier `unity-tga2png.bat` et le dossier `tools` vers le dossier _Assets_ de votre projet Unity.
 2. Dans le dossier _Assets_ double-cliquez sur `unity-tga2png.bat` pour exécuter le le script.
 3. Attendez et relaxez pendant que le script converti les textures et renomme les fichiers .meta. Dépendement de la quantité de texture, ça peut prendre du temps.
