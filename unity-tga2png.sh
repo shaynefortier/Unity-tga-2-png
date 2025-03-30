@@ -9,16 +9,16 @@ find . -type f -name '*.tga' -exec rename ".tga." ".png." "{}.meta" \;
 find . -type f -name '*.tif' -exec rename ".tif." ".png." "{}.meta" \;
 
 # Ask the user if they want to remove the original files
-echo "All texture images have been converted! Do you want to remove the original .tga and .tif files now? (yes/no)"
+echo "All texture images have been converted! Do you want to remove the original .tga and .tif files now? (yes/y/no/n)"
 read removeOriginal
 
-# Remove the original .tga files if the user's input was "yes"
-if [ "$removeOriginal" = "yes" ]; then
+# Remove the original .tga files if the user's input was "yes" or "y"
+if [ "$removeOriginal" = "yes" ] || [ "$removeOriginal" = "y" ]; then
     find . -type f -name '*.tga' -exec rm {} \;
 fi
 
-# Remove the original .tif files if the user's input was "yes"
-if [ "$removeOriginal" = "yes" ]; then
+# Remove the original .tif files if the user's input was "yes" or "y"
+if [ "$removeOriginal" = "yes" ] || [ "$removeOriginal" = "y" ]; then
     find . -type f -name '*.tif' -exec rm {} \;
 fi
 

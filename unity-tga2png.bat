@@ -19,14 +19,14 @@ echo All texture images have been converted! Do you want to remove the original 
 set /p removeOriginal=
 
 REM Remove the original .tga files if the user's input was "yes"
-if /I "%removeOriginal%"=="yes" (
+if /I "%removeOriginal%"=="yes" or /I "%removeOriginal%"=="y" (
     for /R %%f in (*.tga) do (
         del "%%f"
     )
 )
 
 REM Remove the original .tif files if the user's input was "yes"
-if /I "%removeOriginal%"=="yes" (
+if /I "%removeOriginal%"=="yes" or /I "%removeOriginal%"=="y" (
     for /R %%f in (*.tif) do (
         del "%%f"
     )
